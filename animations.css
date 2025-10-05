@@ -1,0 +1,20 @@
+button::after {
+  content: ''; /*пустая строка*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat; /*только одна картинка*/
+  background-position: center; /*центр картинки по центру области видимости*/
+  background-size: contain; /*изображение внутри элемента (области видимости браузера)*/
+}
+/*правило @keyframes управляет промежуточными шагами в последовательности анимации*/
+@keyframes change-bg { /*делит 6 секунд на 2 части*/
+  0% { /*определяет стиль для первого кадра*/
+    background-image: url(family.png);
+  }
+  50% { /*определяет стиль для второго кадра*/
+    background-image: url(family2.png); /*показ другой картинки после 3 секунды*/
+  }
+}

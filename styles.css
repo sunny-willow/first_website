@@ -9,10 +9,17 @@ body {
 button {
   border: 1px solid #000; /*рамочка*/
   padding: 25px 40px;
-  color: rgba(0, 0, 0, 0.534);
+  color: rgba(0, 0, 0, 0.534); /*прозрачность от 0 до 1*/
   font-weight: 900;
   font-size: 30px;
   text-transform: uppercase; /*заглавные буквы*/
-  background-color: rgb(219, 197, 156);
+  background-color: pink; /*rgb(219, 197, 156);*/
   cursor: pointer;
+}
+
+/*почему то нажимает не на кнопку, а на всю страницу*/
+
+button:active::after { /*селектор*/
+  animation: change-bg 6s step-end infinite;
+  /*по окончании времени (шагов) повторяет всё бесконечно*/
 }
