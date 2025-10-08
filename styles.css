@@ -6,6 +6,20 @@ body {
   background-color: #bdb0ee;
 }
 
+div {
+  background-color: LightSkyBlue;
+  width: 500px;
+  height: 600px;
+}
+
+h2 { /*в роли селектора имя тега*/
+  font-size: 32px;
+  color: mediumslateblue;
+  font-family: Inter, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
 button {
   border: 1px solid #000; /*рамочка*/
   padding: 25px 40px;
@@ -19,7 +33,7 @@ button {
 
 /*почему то нажимает не на кнопку, а на всю страницу*/
 
-button:active::after { /*селектор*/
-  animation: change-bg 6s step-end infinite;
+button:active::after { /*селектор - "тот, кто проводит отбор" - это отличительный признак элементов, которым правило установит единый стиль*/
+  animation: change-bg 6s step-end infinite; /*свойство со значениями*/
   /*по окончании времени (шагов) повторяет всё бесконечно*/
 }
