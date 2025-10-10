@@ -1,0 +1,37 @@
+body {
+  min-width: 850px;
+}
+
+div {
+  background-color: LightSkyBlue;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 45px;
+  margin-bottom: 0;
+  font-family: William, serif;
+  font-size: 31px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 0; /*будет отодвигать от вышестоящего элемента (если это первый дочерний элемент, то от родителя)*/
+  margin-bottom: 35px;
+  font-family: Inter, sans-serif;
+  font-size: 31px;
+  text-transform: uppercase;
+}
+
+img {
+  width: 210px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Inter, sans-serif;
+}
