@@ -1,48 +1,53 @@
 <!DOCTYPE html> <!-- Указание типа текущего элемента -->
-<html lang="ru">
+<html lang="ru" style="height: 100%;"> <!-- тег с атрибутами, свойствами и значениями, со встроенными или инлайновыми значениями. атрибут для указания CSS стилей прямо в теге называется style -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- initial-scale может увеличить или уменьшить масштаб страницы-->
-    <title>Страница экспериментов</title>
+    <title>Портфолио</title> <!-- Personal web page-->
     <link rel="icon" href="myowl.ico">
     <link rel="stylesheet"
       href="styles.css"/> <!-- Подключение стилей -->
     <link rel="stylesheet"
       href="animations.css"/>
     <style>
-      h1 {
-        color: indigo;
-        font-family: William, serif;
-        margin-bottom: 0;
-      }
       p {
         font-family: Inter, sans-serif;
         margin: 0;
       }
-    </style> <!-- здесь можно писать код на CSS, это будет таблица стилей - набор правил CSS -->
-    <!-- CSS обычно переносят в отдельный файл, когда объём написанного CSS-кода превышает 30-40 строк -->
+    </style> <!-- здесь можно писать код на CSS, это будет таблица стилей - набор правил CSS прямо в html -->
   </head>
   <body>
-    <div> <!-- По умолчанию занимает всю ширину своего родителя -->
-      <h1 style="font-size: 50px; text-transform: uppercase; font-style: italic;">Первый код веб-разработчика</h1> <!-- заголовок с атрибутом, свойством и значением, со встроенным или инлайновым значением-->
-      <h2>Sunny_willow</h2>
-      <p> <!-- абзац или родительский элемент -->
-        Привет!
-        <b> <!-- дочерний элемент b элемента или тега p -->
-          Файл изменён по <i>FTP</i>.
-        </b>
-        <br>
-        <br>
-        Создаю <a href="https://music.yandex.ru/users/yarmieva.veronika/playlists/1031?utm_medium=copy_link&ref_id=9df21f35-d646-4d7d-8e19-7f169559ac8f" target="_blank">плейлист</a>. <!-- теги имеют атрибуты, здесь атрибут и будет ссылкой, target для открытия ссылки в новой вкладке -->
-        <br>
-        <br>
-        <img src="mountains2.jpg" alt="Горы в тумане" width="210"/> <!-- Лучше размерами управлять через стили -->
-        <br>
-        <br>
-        <button>Нажми меня</button>
-        <br>
-        <br>
-      </p>
-    </div>
+    <h1>Первый код</h1> 
+    <h2>Sunny_willow</h2>
+    <p> <!-- абзац или родительский элемент -->
+      Привет! Давай знакомиться! Я
+      <b> <!-- дочерний элемент b тега p -->
+        изучаю <i>HTML, CSS и JavaScript</i>.
+      </b>
+    </p>
+    <p>
+      Вспоминаю высшую математику, C++ и Python.
+    </p>
+    <br> <!-- Перенос строки -->
+    <p>
+      Мои работы:
+      <br>
+      1. <a href="./playlist/playlist.html" target="_blank">Плейлист</a>
+    </p>
+    <br>
+    <p>
+      Мой <a href="https://vk.com/sunny_willow" target="_blank">Блог</a>
+    </p>
+    <br>
+    <h3>Я мама в декрете &colon;&rpar;</h3> <!-- улыбочка -->
+    <img src="girl and children.jpg" alt="мама с малышом" width="160"/> <!-- Лучше размерами управлять через стили -->
+    <br>
+    <br>
+    <button>Нажми меня</button>
+    <br>
+    <br>
+    <p>
+      Файл изменён по FTP.
+    </p>
   </body>
 </html>

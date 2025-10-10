@@ -1,15 +1,16 @@
-html {
-  height: 100%;
-}
+/*это тоже таблица стилей, но уже в отдельном файле. CSS обычно переносят в отдельный файл, когда объём написанного CSS-кода превышает 30-40 строк*/
 
 body {
   background-color: #bdb0ee;
 }
 
-div {
-  background-color: LightSkyBlue;
-  width: 500px;
-  height: 600px;
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: indigo;
+  font-family: William, serif;
+  margin-bottom: 0;
 }
 
 h2 { /*в роли селектора имя тега*/
@@ -18,6 +19,10 @@ h2 { /*в роли селектора имя тега*/
   font-family: Inter, sans-serif;
   margin-top: 10px;
   margin-bottom: 15px;
+}
+
+h3 {
+  margin: 0;
 }
 
 button {
@@ -30,8 +35,6 @@ button {
   background-color: pink; /*rgb(219, 197, 156);*/
   cursor: pointer;
 }
-
-/*почему то нажимает не на кнопку, а на всю страницу*/
 
 button:active::after { /*селектор - "тот, кто проводит отбор" - это отличительный признак элементов, которым правило установит единый стиль*/
   animation: change-bg 6s step-end infinite; /*свойство со значениями*/
