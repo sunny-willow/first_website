@@ -1,0 +1,8 @@
+body {
+    cursor: url('bum.svg'), auto;
+}
+
+div {
+    text-align: center;
+    margin: 0 auto 20px; /*помещает div по центру по горизонтали и немного отодвигает описание вниз*/
+}
