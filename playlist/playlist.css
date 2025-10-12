@@ -3,10 +3,11 @@ body {
 }
 
 div {
-  background-color: LightSkyBlue;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   width: 500px;
   height: 500px;
   text-align: center;
+  margin: 0 auto 20px; /*помещает div по центру по горизонтали и немного отодвигает описание вниз*/
 }
 
 h1 {
@@ -16,6 +17,8 @@ h1 {
   font-size: 31px;
   font-style: italic;
   text-transform: uppercase;
+  font-weight: normal;
+  color: white;
 }
 
 h2 {
@@ -24,14 +27,27 @@ h2 {
   font-family: Inter, sans-serif;
   font-size: 31px;
   text-transform: uppercase;
+  color: white;
 }
 
 img {
   width: 210px;
+  margin-bottom: 80px;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 18px; /*(высота строки) межстрочный интервал или расстояние между базовыми линиями соседних строк*/
+  font-weight: normal; /*убрали жирность шрифта для заголовков*/
+  color: white;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 0;
   font-family: Inter, sans-serif;
+  text-align: center;
 }
