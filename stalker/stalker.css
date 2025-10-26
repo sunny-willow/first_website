@@ -6,12 +6,18 @@ html {
     cursor: url('bum.svg'), auto;
 }
 
+#first {
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
 body {
     height: 100%;
     margin: 0;
 }
 
-div {
+#second {
     text-align: center;
     margin: 0 auto;
 }
@@ -21,13 +27,31 @@ img {
     height: 650 px;
 }
 
-button {
+#miss {
     position: absolute;
-    border: 0 solid #ffffff;;
-    inset-block-start: 54px;
+    z-index: 1;
+    border: 0 solid #ffffff;
+    inset-block-start: 0;
     inset-inline-start: 0;
     background-color: rgb(255, 255, 255, 0);
     height: 100%;
     width: 100%;
+    cursor: url('bum.svg'), auto;
+}
+
+.hit {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hit {
+    position: absolute;
+    z-index: 2;
+    border: 0 solid #ffffff;
+    inset-block-start: 0; /*сверху*/
+    background-color: rgb(255, 255, 255, 0);
+    padding: 325px 169px;
     cursor: url('bum.svg'), auto;
 }

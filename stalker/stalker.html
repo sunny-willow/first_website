@@ -9,20 +9,34 @@
       href="stalker.css"/>
     </head>
     <body>
-        <audio id="1" src="Bandit Camp Radio Music.mp3" controls loop></audio>
         <audio id="2" src="pm.mp3"></audio>
         <audio id="3" src="maslina.mp3"></audio>
-        <div>
+        <div id="second">
           <img id="imageID" src="bandit.png" alt="Бандит"/>
         </div>
-        <button type="button" onclick="shot()"> </button>
+        <button id="miss" type="button" onclick="shotMiss()"></button>
+        <div class="hit">
+          <button id="hit" type="button" onclick="shotHit()"></button>
+        </div>
+        <div id="first">
+          <audio id="1" src="Bandit Camp Radio Music.mp3" controls loop></audio>
+        </div>
         <script>
-          function shot() {
+          function shotMiss() {
+            var audio1 = document.getElementById('1');
+            var audio2 = document.getElementById('2');
+            audio2.volume = 1;
+            audio2.pause();
+            audio2.play();
+          }
+          function shotHit() {
             var audio1 = document.getElementById('1');
             var audio2 = document.getElementById('2');
             var audio3 = document.getElementById('3');
             var image = document.getElementById('imageID');
             audio1.pause();
+            audio2.pause();
+            audio3.pause();
             audio2.play();
             image.src = "dead bandit.webp";
             image.style = "margin-top: 138px";
