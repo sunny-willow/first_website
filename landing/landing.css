@@ -1,0 +1,13 @@
+body {
+    min-width: 850px;
+}
+
+header {
+    width: 500px;
+    height: 500px;
+    background-color: forestgreen;
+}
+
+h1 {
+    font-size: 74px;
+}
