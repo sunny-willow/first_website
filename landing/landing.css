@@ -1,13 +1,68 @@
+* /*селектор для всех элементов страницы*/ {
+    box-sizing: border-box; /*границы и внутренние отступы отрисуются внутрь, ранее был content-box, где границы и внутренний отступ расширяли элемент*/
+}
+
+body, h1, h2, h3, h4, p {
+    margin: 0; /*убирает отступ h1 сверху и body по бокам. убирать отступ лучше всегда в начале*/
+    font-size: 100%;
+    font-weight: normal;
+}
+
 body {
     min-width: 850px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
 header {
-    width: 500px;
-    height: 500px;
-    background-color: forestgreen;
+    height: 100vh; /*относительно окна браузера, также vw. а % относительно родителя*/
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    background-size: cover;
+    background-position: center;
+    /*background-color: #faeedd;
+    background-size: 200px 124px;
+    background-repeat: no-repeat;*/
+    text-align: center;
 }
 
 h1 {
     font-size: 74px;
+    color: rgba(35, 35, 221, 0.623);
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-top: 270px;
+}
+
+.overlay { /*для трехуровневой системы вложенности*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 151, 218, 0.5);
+}
+
+.card {
+    width: 360px;
+    background-color: #e3f3ff;
+    margin-bottom: 50px;
+    padding: 25px 25px 30px; /*шорткат*/
+    /*padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 30px;*/
+    border: 5px dashed rgb(250 50 50 / .4)/*у border свой шорткат*/
+}
+
+.card-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 31px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 18px;
 }
