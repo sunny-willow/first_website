@@ -22,6 +22,7 @@ header {
     background-size: 200px 124px;
     background-repeat: no-repeat;*/
     text-align: center;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -38,16 +39,28 @@ h1 {
     background-color: rgba(52, 151, 218, 0.5);
 }
 
+.content {
+    font-size: 0;
+    width: 770px;
+    margin: 0 auto; /*значение auto по бокам центрирует, задаёт максимальную ширину*/
+}
+
 .card {
     width: 360px;
-    background-color: #e3f3ff;
     margin-bottom: 50px;
     padding: 25px 25px 30px; /*шорткат*/
     /*padding-left: 25px;
     padding-right: 25px;
     padding-top: 25px;
     padding-bottom: 30px;*/
-    border: 5px dashed rgb(250 50 50 / .4)/*у border свой шорткат*/
+    border: 5px dashed rgba(50, 237, 250, 0.4); /*у border свой шорткат*/
+    display: inline-block;
+    margin-right: 50px;
+    box-shadow: 4px 4px 0 rgba(50, 237, 250, 0.1); /*вправо вниз размытие и цвет (отрицательные значения пойдут в противоположную сторону)*/
+}
+
+.no-right-margin {
+    margin-right: 0;
 }
 
 .card-image {
@@ -61,8 +74,22 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
+    color: rgba(35, 35, 221, 0.623);
 }
 
 .card-text {
     font-size: 18px;
+}
+
+.end {
+    height: 200px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6ce 100%);
+    display: flex;
+}
+
+.footer-author {
+    color: rgba(35, 35, 221, 0.623);
+    font-size: 25px;
+    font-weight: 800;
+    margin: auto; /*работает благодаря flex, это центрирование можно использовать и в header*/
 }
