@@ -67,7 +67,8 @@ let button = document.querySelector('.button'); //выбираем объект 
 let advice = document.querySelector('.advice');
 let phrase = document.querySelector('.phrase');
 let image = document.querySelector('.image');
-button.addEventListener('click', function () { //по клику выполняет функцию
+//обработчики событий - это функции, которые вызываются в ответ на определенное событие. Это может быть, например, щелчок мыши.
+button.addEventListener('click', function() { //по клику выполняет функцию, кстати - анонимную
     let randomElement = getRandomElement(phrases); //заменяет текст рандомным из массива
     /*phrase.textContent = randomElement.text; текстовое содержимое тега с классом phrase = ...*/
     smoothly(phrase, 'textContent', randomElement.text); //тоже самое с плавным переходом по библиотеке smoothly
